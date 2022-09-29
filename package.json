@@ -1,0 +1,16 @@
+{
+  "name": "cypress-testy",
+  "version": "1.0.0",
+  "description": "TESTY AUTOMATYCZNE",
+  "main": "index.js",
+  "scripts": {
+    "open": "npx cypress open",
+    "all": "npx cypress run"
+  },
+  "author": "Wojciech",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.8.0",
+    "cypress-xpath": "^2.0.1"
+  }
+}
