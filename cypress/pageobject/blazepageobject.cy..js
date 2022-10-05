@@ -3,7 +3,7 @@ class blaze {
         cy.visit('https://www.demoblaze.com/')
     }
     laptops() {
-        cy.xpath("//a[text()='Laptops']").click()
+        cy.get(".list-group-item").contains("Laptop").click();
     }
     macbook() {
         cy.get(".card-title").contains("MacBook air").click();
@@ -11,14 +11,12 @@ class blaze {
     addToCart() {
         cy.get(".btn:visible").contains("Add to cart").click();
     }
-    // alert() {
-    //     cy.get("#message-text").click()
-    // }
+
     cart() {
         cy.xpath("//a[text()='Cart']").click()
     }
     order() {
-        cy.xpath("//button[text()='Place Order']").click()
+        cy.get(".btn:visible").contains("Place Order").click()
     }
     name(name) {
         cy.get('#name')
@@ -77,20 +75,18 @@ class blaze {
     assertPrice() {
         cy.get('.price-container').contains('$700')
     }
-    // verifyAlertText(tekst) {
-    //     cy.on("window:alert", produkt => {
-    //         expect(produkt).to.eql(tekst)
-    //     })
-    // }
-    // assertTotalPrice() {
-    //     cy.get('#totalp').contains('700')
-    // }
-    // sweetAlert() {
-    //     cy.get('.sweet-alert  showSweetAlert visible').should('be.visible')
-    // }
+    sweetAlert() {
+        cy.get('.sweet-alert').should('be.visible')
+    }
     assertBaseURL() {
         cy.url().should('include', 'https://www.demoblaze.com/index.html')
     }
+    alertText() {
+        cy.on('window:alert', (msg) => {
+            expect(msg).to.contains(str);
+        })
+    }
+    
 }
 
 export default new blaze();
