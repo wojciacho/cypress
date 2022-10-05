@@ -6,10 +6,10 @@ class blaze {
         cy.xpath("//a[text()='Laptops']").click()
     }
     macbook() {
-        cy.xpath("//a[text()='MacBook air']").click()
+        cy.get(".card-title").contains("MacBook air").click();
     }
     addToCart() {
-        cy.xpath("//a[text()='Add to cart']").click()
+        cy.get(".btn:visible").contains("Add to cart").click();
     }
     // alert() {
     //     cy.get("#message-text").click()
