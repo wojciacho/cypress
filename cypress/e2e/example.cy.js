@@ -11,9 +11,9 @@ it("Should add macbook and visit cart", () => {
     cy.xpath("//button[text()='Place Order']").click()
 })
 it("Should type user details", () => {
-    const name = "Edward Pasfield";
-    const country = "England";
-    const city = "Bath";
+    const name = "Wojciech";
+    const country = "Poland";
+    const city = "Warsaw";
     const card = "1234 1234 1234 1234";
 
     cy.get('#name').clear().type(name)
