@@ -12,4 +12,4 @@
 * https://itera-qa.azurewebsites.net/home/automation,
 * https://demo.opencart.com/index.php?route=common/home&language=en-gb,
 * https://parabank.parasoft.com/parabank/index.htm,
-* https://opensource-demo.orangehrmlive.com'
+* https://opensource-demo.orangehrmlive.com
