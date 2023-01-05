@@ -3,7 +3,7 @@
 ## Repository for practicing automation testing by using Cypress.io framework.
  Below are websites which I'm using for practice automation testing:
 
-* automationpractice.com/index.php,
+* www.automationpractice.com/index.php,
 * http://a.testaddressbook.com,
 * www.saucedemo.com,
 * https://www.demoblaze.com,
